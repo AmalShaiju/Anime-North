@@ -1,0 +1,949 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #303036;
+ 	color: white;
+	font-size: 20px;
+ 	font-family: 'Poppins', sans-serif;
+}
+
+/**********************************************************HOME*************************************************/
+
+/**************LOGO BANNER******************/
+.full-width-col-logo{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: #303036;
+	max-width: 1440px;
+}
+
+.small-col{
+	width: 100%;
+	height:100%;
+}
+
+#menu-icon{
+	background: url(images/logo/menu-icon.png) center no-repeat;
+    display: inline-block;
+    height: 25px;
+    width: 47px;
+    margin-right: 11px;
+    float: right;
+}
+
+.small-col img{
+	width: 100%;
+	height: 100%;
+}
+	
+nav ul{
+	list-style-type: none;
+	display: none;
+	background-color: #fc5130;
+	top: 10%;
+	width: 100%;
+	position: absolute;
+	right: 0;
+	height: 100%;
+	text-align: center;
+	z-index: 4;
+	animation: slide 0.5s ease-in-out;
+}
+
+@keyframes slide{
+	from{
+		right: -50%;
+	}
+
+	to{
+		right: 0;
+	}
+}
+
+nav li{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+nav a{
+	text-decoration: none;
+	color: #303036;
+	font-weight: 600;
+}
+
+nav:hover ul{
+	display: block;
+}
+
+/**********************************************/
+
+
+/**************RECENT BANNER******************/
+
+.full-width-col-recent{
+	display: flex;
+	background-color: #fc5130;
+	color: #303036;
+	font-weight: 700;
+	justify-content: center;
+}
+
+.full-width-col-recent img{
+	width: 13%;
+}
+
+.full-width-col-recent h2{
+	align-self: center;
+}
+
+/**********************************************/
+
+/**************ANIME LIST******************/
+.full-col-anime-list{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	margin-top: 50px;
+	grid-gap: 20px;
+	grid-row-gap: 50px;
+	justify-items:center;
+}
+
+.small-col-anime-list{
+	width: 75%;
+}
+
+.small-col-anime-list h4{
+	text-align: center;
+	color: red;
+	font-weight: 400;
+}
+
+.small-col-anime-list h3{
+ 	font-weight: 600;
+ 	text-align: center;
+}
+
+.small-col-anime-list img{
+	width: 100%;
+	filter: drop-shadow(0px 1px 8px black);
+}
+
+/********************************************/
+
+/*******************TRENDING NEWS**************/
+.trending-news{
+	margin-top: 60px;
+	text-align: center;
+}
+
+.trending-news h2{
+	font-size: 35px;
+	background-image: linear-gradient(to right, #20e4fd,#f02547);
+	color: rgba(255,255,255,0.7);
+}
+
+.trending-news h3{
+    padding-top: 10px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.trending-news img{
+	height:400px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.trending-news p{
+	width: 100%;
+	padding: 20px 38px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	line-height: 32px;
+	font-size: 14px;
+	margin: 0 auto;
+}
+/**********************************************/
+
+/***************TOP GROSSING****************/
+.full-width-col-top-grossing {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	width: 60%;
+	margin: 0 auto;
+	grid-row-gap: 20px;
+	margin-top: 40px;
+}
+
+.small-col-top-grossing{
+	margin-bottom: 20px;
+}
+
+.small-col-top-grossing img{
+	width: 100%;
+	filter: drop-shadow(0px 2px 2px black);
+}
+
+.small-col-top-grossing p{
+	margin-left: 10px;
+	font-size: 12px;
+	padding: 6px 2px;
+ 	font-family: 'Open Sans', sans-serif;
+ 	letter-spacing: 0.5px;
+ 	word-spacing: 1px;
+}
+.small-col-top-grossing h3{
+	letter-spacing: 0.9px;
+	font-size:23px;
+	word-spacing: 2px;
+	text-align: center;
+}
+
+span{
+	color: red;
+}
+
+
+/**********************************************/
+
+/***************QUESTION BANNER****************/
+#banner{
+	width: 100%;	
+	height: 100px;
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 2px;
+}
+
+#banner::after{
+	content: "";
+    background-color: rgba(0,0,0,0.3);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+}
+
+#banner h2{
+	position: absolute;
+	z-index: 3;
+	top: 16px;
+	width: 100%;
+	font-size: 29px;
+	text-align: center;
+	background-image: linear-gradient(to right, #0048b3, #00f3f8);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}	
+
+#banner img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: drop-shadow(0px 1px 2px black);
+}
+
+#banner button{
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 3;
+  	padding: 6px 15px;
+  	text-decoration: none;
+  	cursor: pointer;
+  	border-radius: 16px;
+  	outline: none;
+  	background: none;
+  	border: 1.5px solid white;
+  	color: white;
+  	font-weight: 600;
+  	-webkit-animation: textglow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes textglow {
+  to {
+    text-shadow: 0 0 1px #fff, 0 0 6px #0085cc, 0 0 7px #0090d0, 0 0 8px #00a3d1, 0 0 9px #00f3f8
+  }
+}
+
+#banner button:hover{
+  	border-color: #00f3f8;
+  	color: #00f3f8;
+}
+/**********************************************/
+
+/******************************************************************************************************************************************/
+
+/********************************************************CONTACT*************************************************/
+
+.contact-cover{
+	width: 100%;
+	height: 200px;
+	position: relative;
+	margin-top: 3%;
+}
+
+.contact-cover::after{
+	content: "";
+    background-color: rgba(0,0,0,0.3);
+    height:100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+}
+
+.contact-cover img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.contact-cover h1{
+	position: absolute;
+    top: 59%;
+    width: 99%;
+    text-align: center;
+    margin-left: 0px;
+    z-index: 3;
+    font-size: 37px;
+    color: white;
+    transform: rotate(-3deg);
+}
+
+.full-col-contact{
+	background: rgba(0,0,0,0.4);
+	display: grid;
+	grid-template-columns: 1fr
+}
+
+.small-col-contact-2{
+	display: none;
+}
+
+.contact-section-1 p{
+	text-align: center;
+ 	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	padding: 10px 20px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	font-size: 16px;
+	background-image: linear-gradient(to right, #795e90,#f02547);
+}
+
+input,textarea{
+	display: block;
+	background: transparent;
+	border:none;
+	margin-bottom:30px;
+	width: 45%;
+    font-size: 12px;
+	height: 30px;
+	color: white;
+	border-bottom: 0.25px solid white;
+	outline: none;
+	margin-left: 30px;
+	margin-top: 20px;
+ 	font-family: 'Open Sans', sans-serif;
+ 	letter-spacing: 1px;
+ 	resize: none;
+
+}
+
+input[type=email]{
+	width: 65%;
+}
+
+textarea{
+	width: 80%;
+	height: 160px;
+	border:0.25px solid white;
+	padding-top: 8px;
+	padding-left: 10px;
+ 	font-family: 'Open Sans', sans-serif;
+}
+
+input[type=submit]{
+  	text-decoration: none;
+  	cursor: pointer;
+  	border-radius: 14px;
+  	outline: none;
+  	background: none;
+  	border: 2px solid white;
+  	margin: 0 auto;
+  	margin-bottom: 25px;
+  	font-weight: 700;;
+  	width: 30%
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+legend{
+	text-align: center;
+    color: #f02547;
+    font-weight: 600;
+   	font-size: 21px;
+}	
+
+fieldset{
+	border:0.25px solid #8E24AA;
+    margin: 19px 22px;
+}
+
+input[type=submit]:hover{
+	border-color: #8E24AA;
+}
+
+input:focus{
+	border-color: #8E24AA;
+}	
+
+textarea:focus{
+	border-color: #8E24AA;
+}
+
+.social-logo{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.social-logo img{
+	width: 15%;
+	margin-bottom: 10px;
+}
+
+#social-p{
+	text-align: center;
+	margin-bottom: 6px;
+	padding: 10px 20px;
+	font-size: 20px;
+ 	font-family: 'Poppins', sans-serif;
+ 	font-weight: 600;
+ 	background-image: linear-gradient(to right, #20e4fd,#f02547);
+}
+
+footer{
+	text-align: center;
+}
+
+footer a{
+	text-decoration: none;
+	color: white
+}
+
+footer a:hover{
+	color: #f02547;
+}
+
+small{
+	font-size: 6px;
+}
+
+.social-logo a{
+	display: contents;
+}
+
+/******************************************************************************************************************************************/
+
+/********************************************************Info*************************************************/
+
+/***************425-px****************/
+
+@media screen and (min-width: 425px){
+
+	#menu-icon{
+		margin-top: 5px;
+	}
+
+	.full-width-col-recent h2{
+		font-size: 25px; 
+	}
+
+	.full-width-col-recent img {
+    	width: 11%;
+	}
+
+	.small-col-anime-list h4{
+		font-size: 12px;
+	}
+
+	.small-col-anime-list h3{
+		font-size: 15px;
+	}
+
+	.small-col-top-grossing h3 {
+  	  font-size: 29px;
+	}
+
+	#banner h2{
+		font-size: 38px;
+		top: 7px;
+	}
+
+	#banner button{
+		border-radius: 20px;
+	}
+
+	.contact-cover h1 {
+		font-size: 47px;
+		top: 62%;
+    	transform: rotate(-2deg);
+    	margin-bottom: 10px;
+	}
+
+	input, textarea{
+		margin-left: 38px;
+	}
+
+	fieldset{
+		margin: 20px 40px;
+	}
+
+	legend{
+		font-size: 25px;
+	}
+
+	input[type=submit]{
+	  	width: 25%
+	}
+
+	.social-logo img{
+		width: 13%;
+	}
+
+	#social-p{
+		font-size: 35px;
+	}
+
+}
+
+/**********************************************/
+
+/***************768-px****************/
+
+@media screen and (min-width: 768px) {
+
+	.small-col img {
+    	width: 60%;
+	}
+
+	#menu-icon{
+		display: none;
+	}
+
+	nav ul{
+		background: transparent;
+	    display: inline-block;
+	    top: 0;
+	    width: 49%;
+	    height: 100px;
+	    margin-top: 10px;
+	    animation: none;
+	}
+
+	nav li{
+		display: inline-block;
+		padding: 25px 28px;
+	}
+
+	nav a{
+		color: white;
+		font-size: 15px;
+		font-weight: 400;
+	}
+
+	ul a:hover {
+		color: red;
+	}
+
+	.full-width-col-recent {
+    	justify-content: start;
+	}	
+
+	.full-width-col-recent img{
+		width: 7%;
+		margin-left: 20px;
+	}
+
+	.full-width-col-recent h2{
+		font-size: 30px;
+	}
+
+	.full-col-anime-list {
+    	grid-template-columns: 1fr 1fr 1fr;
+		margin: 55px 50px;
+	}
+
+	.trending-news h3{
+    	font-size: 40px;
+    	padding: 0px 97px;
+	}
+
+	.trending-news p{
+		width: 85%;
+		font-size: 17px;
+		letter-spacing: 1.5px;
+		line-height: 36px;
+	}
+
+	.full-width-top-grossing-banner {
+	    grid-template-columns: 44% 1fr;
+	}
+
+	.full-width-top-grossing-banner img{
+		width: 14%;
+	}
+
+	.full-width-col-top-grossing{
+		grid-template-columns: 1fr 2fr;
+		width: 80%;
+	}	
+
+	.small-col-top-grossing {
+    	margin-bottom: 40px;
+	}
+
+	.small-col-top-grossing h3 {
+    	font-size: 17px;
+	}
+
+	.small-col-top-grossing p {
+    	font-size: 14px;
+    	padding:10px 10px;
+    	letter-spacing: 1.2px;
+	}
+
+	#banner{
+		height: 150px;
+	}
+
+	#banner h2{
+		font-size: 64px;
+    	top: 4px;
+	}
+
+	#banner button{
+		top: 76%;
+		padding: 10px 27px;
+	}
+
+	.full-col-contact {
+   	 	grid-template-columns: 1fr 1fr;
+    	grid-column-gap: 28px;
+    	padding: 33px 57px;
+	}
+
+	.small-col-contact-2{
+		display:block;
+		position: relative;
+	}
+
+	.contact-cover{
+		display: none;
+	}
+
+	fieldset{
+		margin: 20px 10px;
+	}
+
+	legend{
+		font-size: 19px;
+	}
+
+	input, textarea {
+   	 margin-left: 25px;
+	}
+
+	.small-col-contact-2 p{
+	    background: none;
+	    position: absolute;
+	    font-size: 50px;
+	    width: 100%;
+	    text-align: center;
+	    font-weight: 600;
+	    background-image: linear-gradient(to right, #8E24AA,#f02547);
+	    filter: drop-shadow(3px 5px 0px black);
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	    z-index: 3;
+	    top: 70%;
+	}
+
+
+	#social-p{
+		padding: 3px 0px;
+	}
+
+	.social-logo img {
+    	width: 7%;
+   	 	margin-top: 11px;
+	}
+
+	#contact-anime-girl{
+		width: 100%;
+    	object-fit: cover;
+    	height: 95%;
+    	filter: drop-shadow(3px 5px 0px black);
+    	padding: 23px 0px;
+	}
+
+	small{
+		font-size: 7px;
+	}
+
+
+}
+
+/**********************************************/
+
+/***************1024-px****************/
+
+@media screen and (min-width: 1024px) {
+
+	.small-col img{
+		width: 48%;
+	}
+
+	nav a{
+		font-size: 16px;
+	}
+
+	.full-width-col-logo li{
+	   padding: 25px 40px;
+	}
+
+	.full-width-col-recent img {
+   		 width: 6%;
+	}	
+
+	.full-col-anime-list{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		margin: 50px 60px;
+	}
+
+	.small-col-anime-list {
+    	width: 90%;
+	}
+
+	.trending-news img{
+		height: 500px;
+	}
+
+	.trending-news h2 {
+    	font-size: 49px;
+	}
+
+	.trending-news p {
+    	letter-spacing: 1px;
+    	line-height: 45px;
+	    padding: 20px 69px;
+	}	
+
+	.trending-news h3 {
+    	font-size: 45px;
+   		 padding: 0px 75px;
+	}
+
+	.full-width-top-grossing-banner img {
+    	width: 12.5%;
+	}
+
+	.full-width-col-top-grossing{
+		border:2px solid;
+		padding: 30px;
+       	margin-bottom: 50px;   	
+	}
+
+	#banner {
+		height: 200px;
+	}
+
+	#banner h2{
+		font-size: 75px;
+    	top: 8px;
+	}
+
+	#banner button{
+		top: 70%;
+		padding: 14px 47px;
+    	border-radius: 38px;
+   		margin: 11px 2px;
+    	font-size: 25px;
+	}
+
+	.small-col-anime-list h3 {
+    	font-size: 19px;
+	}
+
+	.small-col-anime-list h4 {
+    	font-size: 14px;
+	}
+
+	input, textarea{
+		margin-left: 45px;
+	}
+
+	fieldset{
+		margin: 20px 30px;
+	}
+
+	.small-col-contact-2 p{
+	    font-size: 60px;
+	    top: 68%;
+	}
+
+	.social-logo img {
+    	width: 6%
+	}
+
+	legend{
+		font-size: 23px;
+	}
+
+}
+
+/**********************************************/
+
+
+/***************1440-px****************/
+
+@media screen and (min-width: 1440px){
+
+	.full-width-col-logo {
+    	height: 100px;
+	}
+
+	.full-width-col-logo img {
+    	width: 46%;
+	}
+
+	nav a {
+    	font-size: 20px;
+
+	}
+
+	nav ul{
+		width: 40%;
+		margin-top: 8px;
+	}
+
+	
+	.full-width-col-logo li {
+    	padding: 33px 40px;
+	}
+
+	.full-width-col-recent {
+		margin-top: 10px;
+	}
+
+	.full-width-col-recent img {
+    	width: 4%;
+	}
+
+	.full-width-col-recent h2 {
+    	font-size: 35px;
+    	padding-top: 2px;
+	}
+
+	.full-col-anime-list {
+    	margin: 64px 150px;
+    	grid-column-gap: 100px;
+	}
+
+	.small-col-anime-list h4 {
+    	font-size: 16px;
+	}	
+
+	.trending-news p {
+	    font-size: 22px;
+	    padding: 20px 150px;
+	    line-height: 55px;
+
+	}
+
+    .trending-news img {
+    	height: 600px;
+	}
+
+	.trending-news h3 {
+ 	   font-size: 65px;
+    	padding: 0px 200px;
+	} 
+
+	.full-width-col-top-grossing {
+       padding: 40px 10px;
+	}
+
+	.full-width-col-top-grossing {
+    	width: 60%;
+    }
+
+    .small-col-top-grossing img {
+   	 	width: 75%
+    }
+    .small-col-top-grossing {
+   	 	text-align: center;
+    }
+
+    .small-col-top-grossing p {
+   	 	text-align: left;
+   	 	font-size: 19px;	
+    }
+
+    .small-col-top-grossing h3 {
+   	 font-size: 20px;
+   	 padding-top: 5px;
+	}
+
+    #banner {
+		height: 250px;
+	}
+
+	#banner h2{
+		font-size: 90px;
+    	top: 25px;
+	}
+
+	legend {
+    	font-size: 38px;
+	}
+
+	fieldset {
+    	margin: 40px 70px;
+	}
+
+	input,textarea{
+		margin-bottom: 50px;
+	}
+
+	.contact-section-1 p{
+		font-size: 20px;
+	}
+
+	.social-logo img {
+    	width: 5%
+	}
+
+	small{
+		font-size: 10px;
+	}
+
+}
+/**********************************************/
+
+
